@@ -18,22 +18,37 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
       <div class="row">
       <div class="col-md-4 text-center">
         <div class="answer-card answer-card-1 mx-auto" @click="answer(1)">
-          
+          <img src="../assets/answers/paper.png" class="ans-img" v-if="index == 0" alt="">
+          <img src="../assets/answers/teacher.png" class="ans-img" v-if="index == 1" alt="">
+          <img src="../assets/answers/nose.png" class="ans-img" v-if="index == 2" alt="">
+          <img src="../assets/fox.png" class="ans-img" v-if="index == 3" alt="">
+          <img src="../assets/computer.png" class="ans-img" v-if="index == 4" alt="">
+          <img src="../assets/policeman.png" class="ans-img" v-if="index == 5" alt="">
           <p>{{selectedQuestion.ans1}}</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="answer-card answer-card-2 mx-auto" @click="answer(2)">
+          <img src="../assets/answers/wood.png"  v-if="index == 0" class="ans-img" alt="">
+          <img src="../assets/answers/friends.png"  v-if="index == 1" class="ans-img" alt="">
+          <img src="../assets/answers/arm.png"  v-if="index == 2" class="ans-img" alt="">
+          <img src="../assets/parrot.png"  v-if="index == 3" class="ans-img" alt="">
+          <img src="../assets/book.png"  v-if="index == 4" class="ans-img" alt="">
+          <img src="../assets/doctor.png"  v-if="index == 5" class="ans-img" alt="">
           <p>{{selectedQuestion.ans2}}</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="answer-card answer-card-3 mx-auto" @click="answer(3)">
+          <img src="../assets/answers/glass.png" class="ans-img"  v-if="index == 0" alt="">
+          <img src="../assets/answers/father.png" class="ans-img"  v-if="index == 1" alt="">
+          <img src="../assets/answers/head.png" class="ans-img"  v-if="index == 2" alt="">
+          <img src="../assets/insect.png" class="ans-img"  v-if="index == 3" alt="">
+          <img src="../assets/ball.png" class="ans-img"  v-if="index == 4" alt="">
+          <img src="../assets/donkey.png" class="ans-img"  v-if="index == 5" alt="">
           <p>{{selectedQuestion.ans3}}</p>
         </div>
       </div>
@@ -209,5 +224,14 @@
       font-size: 70px;
       color: rgb(255, 255, 132);
     }
+  }
+
+  .ans-img {
+    position: absolute;
+    max-width: 70px;
+    max-height: 80px;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: 10px;
   }
 </style>
