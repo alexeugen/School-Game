@@ -190,7 +190,7 @@
 
     p {
       color: white;
-      margin-top: 86px !important;
+      margin-top: 80px !important;
       font-size: 25px;
       max-width: 140px;
       margin-left: auto;
