@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    <question></question>
+    <din id="navbar" class="display-inline">
+      <router-link class="nav-item" to="/">Easy</router-link>
+      <router-link  class="nav-item" to="/medium">Medium</router-link>
+      <router-link  class="nav-item" to="/hard">Hard</router-link>
+    </din>
+    <router-link to="/medium"></router-link>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Question from './components/Question.vue'
 
 export default {
   name: 'app',
   components: {
-    Question
   }
 }
 </script>
@@ -31,4 +35,17 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#navbar {
+  position: fixed;
+  margin-left: -120px;
+  top: 0;
+}
+
+#navbar .nav-item {
+  background: white;
+  margin: 10px;
+  padding: 10px;
+}
+
 </style>
